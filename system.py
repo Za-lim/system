@@ -111,20 +111,7 @@ def token():
 		print '! W31C0M3'
 		exit()
     
-def menu():
-	os.system('clear')
-	try:
-		time.sleep(0)
-		key = "alvin"
-		key = requests.get("https://pastebin.com/raw/RTKfn8Lg")
-		split ("|")
-		n = key
-		f = email
-		
-	except:
-		print "\33[1;91mapi key not available"
-		time.sleep(1)
-		exit()
+
 	try:
 		otw = requests.get('https://graph.facebook.com/me/?access_token='+toket)
 		a = json.loads(otw.text)
