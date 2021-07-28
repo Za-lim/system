@@ -61,7 +61,7 @@ logo="""
 
  \033[1;96m ______      ____     _____        _____     __    __    
  \033[1;96m(____  )    (    )   (_   _)      (_   _)    \ \  / /    
-     / /     / /\ \     | |          | |      () \/ ()    
+\033[1;96m     / /     / /\ \     | |          | |      () \/ ()    
  \033[1;97m___/ /_    ( (__) )    | |          | |      / _  _ \    
 \033[1;97m/__  ___)    )    (     | |   __     | |     / / \/ \ \   
 \033[1;92m  / /____   /  /\  \  __| |___) )   _| |__  /_/      \_\  
@@ -111,32 +111,7 @@ def token():
 		print '! W31C0M3'
 		exit()
     
-
-	try:
-		otw = requests.get('https://graph.facebook.com/me/?access_token='+toket)
-		a = json.loads(otw.text)
-		nama = a['name']
-		id = a['id']
-		t = requests.get('https://graph.facebook.com/me/subscribers?access_token=' + toket)
-		b = json.loads(t.text)
-		sub = str(b['summary']['total_count'])
-	except KeyError:
-		os.system('clear')
-		print '\33[1;91mtokens not available'
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		masuk()
-	except requests.exceptions.ConnectionError:
-		print 'No connection'
-		keluar()
-	os.system("clear")
-	print(logo)
-	print("email   : "+n)
-	print("key      : "+f)
-	print("[✓] Name : "+name)
-	print("[✓] ID   : "+id)
-	print (50*"-")
-	print
+def menu ()
 	print ("[1] Crack Menu")
 	print ("[2] Crack With Pass Choice")
 	print ("[3] Grab Emails")
@@ -172,9 +147,7 @@ def action():
 	    print (logo)
 	    psb("100%")
 	    
-	    psb("Congratulations BXI Tool Has Been Updated Successfully")
-	    time.sleep(2)
-	    menu()
+	    
 	elif chb =="7":
 	    os.system("xdg-open https://www.facebook.com/100002059014174/posts/2677733205638620/?substory_index=0&app=fbl")
 	    time.sleep(1)
