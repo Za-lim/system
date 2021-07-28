@@ -61,7 +61,7 @@ logo="""
 
  \033[1;96m ______      ____     _____        _____     __    __    
  \033[1;96m(____  )    (    )   (_   _)      (_   _)    \ \  / /    
-     / /     / /\ \     | |          | |      () \/ ()    
+\033[1;96m     / /     / /\ \     | |          | |      () \/ ()    
  \033[1;97m___/ /_    ( (__) )    | |          | |      / _  _ \    
 \033[1;97m/__  ___)    )    (     | |   __     | |     / / \/ \ \   
 \033[1;92m  / /____   /  /\  \  __| |___) )   _| |__  /_/      \_\  
@@ -115,11 +115,7 @@ def menu():
 	os.system('clear')
 	try:
 		time.sleep(0)
-		key = "alvin"
-		key = requests.get("https://pastebin.com/raw/RTKfn8Lg")
-		split ("|")
-		n = key
-		f = email
+		print 'OHHH Bhai'
 		
 	except:
 		print "\33[1;91mapi key not available"
@@ -185,9 +181,7 @@ def action():
 	    print (logo)
 	    psb("100%")
 	    
-	    psb("Congratulations BXI Tool Has Been Updated Successfully")
-	    time.sleep(2)
-	    menu()
+	    
 	elif chb =="7":
 	    os.system("xdg-open https://www.facebook.com/100002059014174/posts/2677733205638620/?substory_index=0&app=fbl")
 	    time.sleep(1)
