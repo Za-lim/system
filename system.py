@@ -111,7 +111,7 @@ def token():
 		print '! W31C0M3'
 		exit()
     
-def menu ()
+def menu():
 	print ("[1] Crack Menu")
 	print ("[2] Crack With Pass Choice")
 	print ("[3] Grab Emails")
